@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration & Authentication</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+    body {
+      background-image: url(images/wp2561067-simple-background.jpg);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="taskmanager.html">Task Manager</a>
+          <a class="navbar-brand" href="register.html">Register</a>
+          <a class="navbar-brand" href="carrousel.html">Just for the bonus :D</a>
+        </div>
+      </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        User Registration
+                    </div>
+                    <div class="card-body">
+                        <form id="registrationForm">
+                            <div class="form-group">
+                                <label for="regUsername">Username</label>
+                                <input type="text" class="form-control" id="regUsername" name="regUsername" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="regEmail">Email address</label>
+                                <input type="email" class="form-control" id="regEmail" name="regEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="regPassword">Password</label>
+                                <input type="password" class="form-control" id="regPassword" name="regPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        User Authentication
+                    </div>
+                    <div class="card-body">
+                        <form id="authForm">
+                            <div class="form-group">
+                                <label for="authUsername">Username</label>
+                                <input type="text" class="form-control" id="authUsername" name="authUsername" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="authPassword">Password</label>
+                                <input type="password" class="form-control" id="authPassword" name="authPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-success">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

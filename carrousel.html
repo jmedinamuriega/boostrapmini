@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links that are necesary to the carousel to work :p -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Task2</title>
+    <style>
+            body {
+      background-image: url(images/wp2561067-simple-background.jpg);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+/* I just modified the next control button because was not necesary to modofy the prev one */
+.carousel-control-next {
+    top: 50%; 
+    transform: translateY(-50%);
+    left: 20%;
+    right: 5%;
+}
+/* some css to adjust the images */
+    #slider .carousel-item {
+        height: 500px;
+      }
+      
+      .carousel-item>img {
+        width: 100%
+      }
+      .carousel-item {
+        height: 400px;
+    }
+
+    .carousel-item img {
+        width: auto;
+        height: 100%;
+    }</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="taskmanager.html">Task Manager</a>
+          <a class="navbar-brand" href="register.html">Register</a>
+          <a class="navbar-brand" href="carrousel.html">Just for the bonus :D</a>
+    </nav>
+ <!-- i did this div so i can center all the carousel -->
+    <div class="carousel" style="margin-left: 40%;">
+      <div class="carousel slide" id="slider" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#slider" data-slide-to="0" class="active"></li>
+          <li data-target="#slider" data-slide-to="1"></li>
+          <li data-target="#slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/merienda.jpg">
+            <div class="carousel-caption">
+            </div>
+          </div>
+      
+          <div class="carousel-item" id="slide2">
+            <img src="images/gatoyin.jpg">
+            <div class="carousel-caption">
+            </div>
+          </div>
+      
+          <div class="carousel-item" id="slide3">
+            <img src="images/ricardorey.jpg">
+            <div class="carousel-caption">
+            </div>
+          </div>
+      
+        </div>
+        <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      
+    </div>  
+    <!-- i tried of fix the carousel so it looks prettier but was imposible for me sorry for that -->
+</body>

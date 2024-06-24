@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url(images/wp2561067-simple-background.jpg);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="navbar-brand" href="taskmanager.html">Task Manager</a>
+      <a class="navbar-brand" href="register.html">Register</a>
+      <a class="navbar-brand" href="carrousel.html">Just for the bonus :D</a>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1 class="display-4">Task Dashboard</h1>
+      <p class="lead">Your ultimate tool for managing tasks efficiently.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Task 1</h5>
+            <p class="card-text">Task description goes here.</p>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="taskName" value="Task 1">
+              </div>
+              <button type="submit" class="btn btn-primary">Save</button>
+              <button type="button" class="btn btn-danger">Delete</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Task Details</h5>
+            <p class="card-text">Details about Task 1.</p>
+            <form>
+              <div class="form-group">
+                <label for="taskNameDetails">Task Name</label>
+                <input type="text" class="form-control" id="taskNameDetails" value="Task 1" disabled>
+              </div>
+              <div class="form-group">
+                <label for="taskDescription">Task Description</label>
+                <textarea class="form-control" id="taskDescription" rows="3">Task description goes here.</textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Update</button>
+              <button type="button" class="btn btn-danger">Delete</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Create New Task</h5>
+            <form>
+              <div class="form-group">
+                <label for="newTaskName">Task Name</label>
+                <input type="text" class="form-control" id="newTaskName">
+              </div>
+              <div class="form-group">
+                <label for="newTaskDescription">Task Description</label>
+                <textarea class="form-control" id="newTaskDescription" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Create Task</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Task Manager. All rights reserved to Coding temple.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
